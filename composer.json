@@ -1,0 +1,27 @@
+{
+    "name": "actech/glpi-theme",
+    "description": "Plugin de personalização visual para GLPI 11",
+    "type": "glpi-plugin",
+    "license": "GPL-3.0",
+    "keywords": [
+        "glpi",
+        "theme",
+        "login",
+        "actech"
+    ],
+    "authors": [
+        {
+            "name": "Thamara Cristina",
+            "email": "thamara.ferreira@actechbr.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ActechTheme\\": "inc/"
+        }
+    }
+}

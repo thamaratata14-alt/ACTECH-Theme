@@ -1,0 +1,19 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Composer
+/vendor/
+
+# Logs
+*.log
+
+# Cache
+.cache/
+
+# Sistema operacional
+desktop.ini
