@@ -1,24 +1,35 @@
 <?php
 
-/**
- * -------------------------------------------------------------------------
- * ACTECH Theme
- * -------------------------------------------------------------------------
- *
- * Arquivo responsável por carregar os componentes principais do plugin.
- *
- * @author      Thamara Cristina
- * @copyright   ACTECH Soluções Tecnológicas
- * @license     GPL v3
- * -------------------------------------------------------------------------
- */
-
 if (!defined('GLPI_ROOT')) {
-    die("Acesso direto não permitido.");
+    die("Sorry. You can't access this file directly");
 }
 
 /**
- * Carrega os arquivos do plugin.
+ * Inicialização do plugin
  */
+function plugin_init_actechtheme()
+{
+    global $PLUGIN_HOOKS;
 
-require_once __DIR__ . '/inc/Hooks.php';
+    $PLUGIN_HOOKS['csrf_compliant']['actechtheme'] = true;
+}
+
+/**
+ * Informações do plugin
+ */
+function plugin_version_actechtheme()
+{
+    return [
+        'name'           => 'ACTECH Theme',
+        'version'        => '1.0.0',
+        'author'         => 'Thamara Cristina',
+        'license'        => 'GPL v3',
+        'homepage'       => '',
+        'requirements'   => [
+            'glpi' => [
+                'min' => '11.0.0',
+                'max' => '11.99'
+            ]
+        ]
+    ];
+}
